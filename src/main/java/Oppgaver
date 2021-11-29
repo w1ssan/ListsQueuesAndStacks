@@ -1,0 +1,39 @@
+Leksjon 6: Implementasjon av lister, og ADT'ene Stakk, Kø og Prioritetskø
+
+Stoffet er henta frå Liang, kapittel 24. Les læreboka!
+
+Implementere lister
+    Lister er fellesnemning for to datastrukturar, tabellar og peikerkjeder. Dette er implementert i Java-API'et ved ArrayList og LinkedList.
+    Vi gjer oss betre kjent med desse. Dessutan ser vi på grensesnittet List, som båre ArrayList og LinkedList implementerer.
+
+Abstrakte datatyper - ADT
+    Ein Abstrakt Datatype - ADT - er ein definisjon som seier korleis vi vil at ein datatype skal fungere, ytre sett,
+    men utan at det er spesifisert korleis den ser ut internt, korleis den er implementert. Det kan vere ei reint tekstleg beskrivelse,
+    men det kan og beskrivast med eit grensesnitt i Java. "Stakk", "Kø" og "Prioritetskø" er døme på slike abstrakte datatyper.
+
+Stakk
+    Ein stakk, eller stabel, er ein datastruktur der ein kan legge inn objekt og ta ut objekt,
+    men ein kan berre sjå på eller ta ut det objektet som har ligge der kortast, det som vart lagt inn sist.
+    Det kallast difor ofte ein LIFO-struktur, Last In First Out. Assosiasjon er ein tallerkenstabel.
+    Vi ser fort at både tabell og peikarkjede kan nyttast til å implementere stakk.
+
+Kø
+    Ein Kø er ein ADT som spesifiserar at ein kan legge inn, sjå på og ta ut objekt, men ein kan berre sjå på og ta ut det som har ligge lengst.
+    Det kallast difor gjerne ein FIFO-struktur, First In First Out. Assosiasjon er ein drosjekø.
+    Vi ser fort at her er det ikkje det same om vi nyttar tabell eller peikarkjede til implementasjonen.
+
+Prioritetskø
+    - er ein struktur der vi kan legge data inn, men berre hente dei ut att etter ein prioritet.
+    Objektet med høgast (evt lågast) prioritet skal ut fyrst. Denne kan implementerast på mange måtar.
+
+Implementasjon
+    Vi ser så på korleis desse tre ADT'ane kan implementerast, ved hjelp av tabell, peikarkjede,
+    eller ein trestruktur som kallast "heap". Vi må innom litt stoff vi hoppa over i kapittel 23 der "heap" vart introdusert.
+
+Oppgåver
+    Når du skal programmere slike oppgåver, må du ofte teikne. Det er ikkje mogeleg å få til denne type programmering utan
+    å teikne dei strukturane som skal programmerast!
+
+        - Lag eit generisk grensesnitt for ADT'en ToVegsKø - den skal kunne sette inn og ta ut i begge endar.
+        - Implementer ToVegsKø ved ei generisk klasse som nyttar peikarkjede-teknikken. Nodene må ha både "neste" og "forrige"-peikar for at klassa skal bli effektiv.
+        - Mange oppgåver på lysarka.
